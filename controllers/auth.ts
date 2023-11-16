@@ -387,7 +387,7 @@ export async function createPaciente(request: Request, response: Response) {
     // Informações pessoais:
     nome,
     cpf,
-    dataDeNacimento,
+    dataDeNascimento,
     email,
     telefoneContato,
     sexo,
@@ -433,7 +433,7 @@ export async function createPaciente(request: Request, response: Response) {
         .send("CPF inválido.");
   }
 
-  if (!dataDeNacimento) {
+  if (!dataDeNascimento) {
     return response
         .status(203)
         .send("Insira a sua data de nacimento.");
@@ -554,7 +554,7 @@ export async function createPaciente(request: Request, response: Response) {
     // Informações pessoais:
     nome,
     cpf,
-    dataDeNacimento,
+    dataDeNascimento,
     email,
     telefoneContato,
     sexo,
